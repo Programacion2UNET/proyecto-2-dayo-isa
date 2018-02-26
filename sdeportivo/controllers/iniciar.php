@@ -50,7 +50,7 @@
 
 								$_SESSION["usuario"]=$_POST['usuario']; //se mantenga la session guardada por ese usuario
 								 
-								header("location:../views/detalles.php");
+								header("location:../views/admin.php");
 
 							}else{//si es un equipo
 

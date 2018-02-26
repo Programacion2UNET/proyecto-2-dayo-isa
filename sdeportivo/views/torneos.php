@@ -90,7 +90,7 @@
 
 	</form>
 
-	<a href="../controllers/cerrar.php">Cerrar Session</a>
+	<a href="../controllers/cerrar.php"><button>Cerrar Session</button></a>
 
 </body>
 </html>
