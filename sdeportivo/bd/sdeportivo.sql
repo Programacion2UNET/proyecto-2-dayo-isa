@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 27-02-2018 a las 01:24:33
+-- Tiempo de generación: 27-02-2018 a las 20:07:01
 -- Versión del servidor: 5.7.19
 -- Versión de PHP: 7.1.9
 
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `administrador` (
   `nom_torneo` varchar(60) COLLATE utf8_spanish_ci NOT NULL,
   `fecha` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `administrador`
@@ -42,10 +42,11 @@ CREATE TABLE IF NOT EXISTS `administrador` (
 
 INSERT INTO `administrador` (`id`, `nom_torneo`, `fecha`) VALUES
 (1, 'Copa SONNY', '2018-03-01'),
-(2, 'Copa Luchadores', '2018-02-12'),
-(3, 'Lapa C.A.', '2018-03-28'),
-(4, 'Agua 2', '2018-04-14'),
-(5, 'Carrera', '2018-03-01');
+(2, 'lucha', '2018-03-10'),
+(3, 'Lapa CA', '2018-03-17'),
+(5, 'Copa Hoja', '2018-03-09'),
+(7, 'Copa Estrella', '2018-02-15'),
+(9, 'torneito', '2019-02-01');
 
 -- --------------------------------------------------------
 
@@ -66,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `equipos` (
   `clave` varchar(60) COLLATE utf8_spanish_ci NOT NULL,
   `admin` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `equipos`
@@ -75,8 +76,7 @@ CREATE TABLE IF NOT EXISTS `equipos` (
 INSERT INTO `equipos` (`id`, `nom_equi`, `nom_corto`, `fecha`, `direccion`, `correo`, `web`, `usuario`, `clave`, `admin`) VALUES
 (1, 'equipo linces', 'equi', '2018-02-01', 'palo gordo', 'mariaisabel@gmail.com', 'isabel.com', 'isabel', '1234', 1),
 (2, 'equipo linces', 'equi', '2018-02-12', 'la concordia', 'dayona@hotmail.com', 'dayona.com', 'dayo', '1234', 1),
-(7, 'Deportivo Tachira', '', '2018-02-03', '', 'dvt@hotmail.com', '', 'dvi', '123', 0),
-(11, 'otro', 'el', '2018-02-01', 'alla', 'elotro@gmail.com', 'github.elotro.io', 'el', '1', 0);
+(13, 'Deportivo Tachira', 'dep t', '2017-01-05', '', 'dep_@hotmail.com', '', 'dvi', '123', 0);
 
 -- --------------------------------------------------------
 
@@ -92,16 +92,14 @@ CREATE TABLE IF NOT EXISTS `torneo` (
   `categoria` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
   `usuario` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=34 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `torneo`
 --
 
 INSERT INTO `torneo` (`id`, `nom_torneo`, `participantes`, `categoria`, `usuario`) VALUES
-(22, 'Agua 2', 5, 'Principiantes', 'dvi'),
-(21, 'Lapa C.A.', 4, 'Profesionales', 'el'),
-(19, 'Lapa C.A.', 3, 'Aficionados', 'dvi');
+(33, 'lucha', 5, 'Profesionales', 'dvi');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

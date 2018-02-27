@@ -59,7 +59,7 @@
 		
 	</style>
 
-	<h2>Bienvenida admistradora <?php echo $_SESSION["usuario"]; ?></h2>
+	<h2>Bienvenida administradora <?php echo $_SESSION["usuario"]; ?></h2>
 	<a href="../views/registroadmin.php"><button class="verde">Registrar Torneo</button></a>
 	<a href="../controllers/cerrar.php"><button class="rojo">Cerrar Sesion</button></a>
 
@@ -86,7 +86,7 @@
 
 		      					<input class="info" type="hidden" name="nom_torneo" value="<?=$row["nom_torneo"]?>">
 
-		      					<input class="info" type="submit" name="" value="Detalles">
+		      					<input class="info" type="image" src="../img/detallesc.png" width="30" height="30" name="" value="Detalles">
 
 		      				</form>
 
@@ -94,11 +94,11 @@
 
 		      					<input class="info" type="hidden" name="nom_torneo" value="<?=$row["nom_torneo"]?>">
 
-		      					<input class="info" type="submit" name="" value="Editar">
+		      					<input class="info" type="image" src="../img/editarc.png" width="30" height="30" name="" value="Editar">
 
 		      				</form>
 
-                    		<a href="../controllers/eliminarTorneo.php?id='<?=$row["id"]?>'"><button class="rojo">Eliminar</button></a>
+                    		<a href="../controllers/eliminarTorneo.php?id='<?=$row["id"]?>'"><input type="image" src="../img/eliminarc.png" width="30" height="30" class="rojo"></a>
                     	</td>
                     </tr>
 
@@ -127,7 +127,7 @@
 
 		      					<input class="info" type="hidden" name="nom_equi" value="<?=$row3["nom_equi"]?>">
 
-		      					<input class="info" type="submit" name="" value="Detalles">
+		      					<input class="info" type="image" src="../img/detallesc.png" width="30" height="30" name="" value="Detalles">
 
 		      				</form>
 
@@ -135,12 +135,12 @@
 
 		      					<input class="info" type="hidden" name="nom_equi" value="<?=$row3["nom_equi"]?>">
 
-		      					<input class="info" type="submit" name="" value="Editar">
+		      					<input class="info" type="image" src="../img/editarc.png" width="30" height="30" name="" value="Editar">
 
 		      				</form>
 		      				
                     		
-                    		<a href="../controllers/eliminarEquipo.php?id='<?=$row3["id"]?>'"><button class="rojo">Eliminar</button></a>
+                    		<a href="../controllers/eliminarEquipo.php?id='<?=$row3["id"]?>'"><input type="image" src="../img/eliminarc.png" width="30" height="30" class="rojo"></a>
                     	</td>
 		      		</tr>
 		      		<?php
