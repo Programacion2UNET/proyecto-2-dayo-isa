@@ -52,9 +52,10 @@
 					while($row = mysqli_fetch_assoc($res)){
 
 						$aux=$row['fecha'];
+						echo $aux;
 						$date=explode("-", $aux);
 
-						if(((int)$date[0])>=$fecha['year'] && ((int)$date[1])>=$fecha['mon'] && ((int)$date[2])>=$fecha['mday']){
+						if($date[0]>=$fecha['year'] && ($date[1]>$fecha['mon']  || ($date[1]==$fecha['mon'] && $date[2]>$fecha['mday']))){
 
 							echo "<option>".$row['nom_torneo']."</option>"; //creando las opciones de los torneos
 						}	

@@ -81,9 +81,9 @@
                     <tr>
                     	<td colspan="2"> <?php echo $row["nom_torneo"] ?> </td> 
                     	<td colspan="2">
-                    		<a href=""><button class="info">Detalles</button></a> 
-                    		<a href=""><button class="info">Editar</button></a> 
-                    		<a href=""><button class="rojo">Eliminar</button></a>
+                    		<a href="detallesTorneo.php?nom_torneo='<?=$row["nom_torneo"]?>'"><button class="info">Detalles</button></a> 
+                    		<a href="editarTorneo.php?nom_torneo='<?=$row["nom_torneo"]?>'"><button class="info">Editar</button></a> 
+                    		<a href="../controllers/eliminarTorneo.php?id='<?=$row["id"]?>'"><button class="rojo">Eliminar</button></a>
                     	</td>
                     </tr>
 
@@ -108,9 +108,9 @@
 		      			<td><?php echo $row2["categoria"]?></td>
 		      			<td><?php echo $row2["participantes"]?></td>
 		      			<td>
-		      				<a href=""><button class="info">Detalles</button></a> 
-                    		<a href=""><button class="info">Editar</button></a> 
-                    		<a href=""><button class="rojo">Eliminar</button></a>
+		      				<a href="detallesEquipo.php?nom_equi='<?=$row3["nom_equi"]?>'"><button class="info">Detalles</button></a> 
+                    		<a href="editarEquipo.php?nom_equi='<?=$row3["nom_equi"]?>'"><button class="info">Editar</button></a> 
+                    		<a href="../controllers/eliminarEquipo.php?id='<?=$row3["id"]?>'"><button class="rojo">Eliminar</button></a>
                     	</td>
 		      		</tr>
 		      		<?php

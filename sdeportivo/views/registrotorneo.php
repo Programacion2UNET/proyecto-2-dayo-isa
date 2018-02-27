@@ -49,6 +49,7 @@
 
 			?>
 
+	<a href="torneos.php"><button>Regresar</button></a>
  	<a href="../controllers/cerrar.php"><button>Cerrar Session</button></a>
  
  </body>

@@ -43,7 +43,7 @@
 
 			<br>
 			<label>Nombre corto: </label>
-			<input type="text" name="nom_cort" required>
+			<input type="text" name="nom_corto" required>
 
 			<br>
 			<label>Fecha de creacion</label>

@@ -85,7 +85,7 @@
 			$nom_equi, $nom_corto, $fecha, $direccion, $correo, $web, $usuario,$clave, $admin);
 			//comilla dobles analiza todo lo que está por dentro y las simples son mas rápidas
 	
-			header("location:torneos.php");
+			header("location:../views/torneos.php");
 
 		}
 
