@@ -74,12 +74,12 @@
                 
 		      
                 <table>
-                    <tr>
-                    	<th colspan="2"> Torneo </th>
+                    <tr> <!--tr filas-->
+                    	<th colspan="2"> Torneo </th> <!--th titulo de las columnas-->
                     	<th colspan="2"> Opciones </th>
                     </tr> 
                     <tr>
-                    	<td colspan="2"> <?php echo $row["nom_torneo"] ?> </td> 
+                    	<td colspan="2"> <?php echo $row["nom_torneo"] ?> </td> <!--td: columnas, nom torneo-->
                     	<td colspan="2">
                     		<a href="detallesTorneo.php?nom_torneo='<?=$row["nom_torneo"]?>'"><button class="info">Detalles</button></a> 
                     		<a href="editarTorneo.php?nom_torneo='<?=$row["nom_torneo"]?>'"><button class="info">Editar</button></a> 

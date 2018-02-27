@@ -12,19 +12,29 @@
 
 	<div id="inicio">
 	<form action="controllers/iniciar.php" method="post">
+
 		<legend>Iniciar sesion</legend>
 
 		<fieldset>
-			<br>
-			<label>Usuario: </label>
-			<input type="text" name="usuario" required>
 
-			<br>
-			<label>Contraseña: </label>
-			<input type="password" name="clave" required>
+			<table>
+				
+				<tr>
+					<td><label>Usuario: </label></td>
+					<td><input type="text" name="usuario" required></td>
+				</tr>
 
-			<br>
-			<input type="submit" name="boton1" value="aceptar">
+				<tr>
+					<td><label>Contraseña: </label></td>
+					<td><input type="password" name="clave" required></td>
+				</tr>
+
+				<tr colspan="2">
+					<td><input type="submit" name="boton1" value="aceptar"></td>
+				</tr>
+
+			</table>
+		
 		</fieldset>
 
 	</form>
@@ -37,40 +47,55 @@
 		<legend>Registrarse</legend>
 
 		<fieldset>
-			<br>
-			<label>Nombre del equipo: </label>
-			<input type="text" name="nom_equi" required>
 
-			<br>
-			<label>Nombre corto: </label>
-			<input type="text" name="nom_corto" required>
+			<table>
+				
+				<tr>
+					<td><label>Nombre del equipo: </label></td>
+					<td><input type="text" name="nom_equi" required></td>
+				</tr>
 
-			<br>
-			<label>Fecha de creacion</label>
-			<input type="date" name="fecha" required>
+				<tr>
+					<td><label>Nombre corto: </label></td>
+					<td><input type="text" name="nom_corto" required></td>
+				</tr>
 
-			<br>
-			<label>Direccion del responsable: </label>
-			<input type="text" name="direccion">
+				<tr>
+					<td><label>Fecha de creacion</label></td>
+					<td><input type="date" name="fecha" required></td>
+				</tr>
 
-			<br>
-			<label>Correo: </label>
-			<input type="text" name="correo" required>
+				<tr>
+					<td><label>Direccion del responsable: </label></td>
+					<td><input type="text" name="direccion"></td>
+				</tr>
 
-			<br>
-			<label>Sitio web: </label>
-			<input type="text" name="web">
+				<tr>
+					<td><label>Correo: </label></td>
+					<td><input type="text" name="correo" required></td>
+				</tr>
 
-			<br>
-			<label>Usuario: </label>
-			<input type="text" name="usuario" required>
+				<tr>
+					<td><label>Sitio web: </label></td>
+					<td><input type="text" name="web"></td>
+				</tr>
 
-			<br>
-			<label>Contraseña: </label>
-			<input type="password" name="clave" required>
-			
-			<br>
-			<input type="submit" name="boton2" value="registrar">
+				<tr>
+					<td><label>Usuario: </label></td>
+					<td><input type="text" name="usuario" required></td>
+				</tr>
+
+				<tr>
+					<td><label>Contraseña: </label></td>
+					<td><input type="password" name="clave" required></td>
+				</tr>
+
+				<tr colspan="2">
+					<td><input type="submit" name="boton2" value="registrar"></td>
+				</tr>
+
+			</table>
+
 		</fieldset>
 
 	</form>
