@@ -24,12 +24,12 @@
 	<title>Editar Equipo</title>
 </head>
 <body>
-	<h2>Editando el equipo: <?php echo $_GET["nom_equi"]; ?></h2>
+	<h2>Editando el equipo: <?php echo $_POST["nom_equi"]; ?></h2>
 	<a href="admin.php"><button class="verde">Regresar</button></a>
 	<a href="../controllers/cerrar.php"><button class="rojo">Cerrar Sesion</button></a>
 	<?php
-		$nom = $_GET["nom_equi"];
-		$sql = "SELECT * FROM `equipos` WHERE nom_equi = $nom"; //Me traigo la tabla admi
+		$nom = mysqli_real_escape_string($connection, $_POST["nom_equi"]);
+		$sql = "SELECT * FROM `equipos` WHERE nom_equi = '$nom'"; //Me traigo la tabla admi
 
 		if($result = mysqli_query($connection, $sql)){	
 
@@ -38,35 +38,48 @@
 
 	<form action="../controllers/editarEBase.php" method="post">
 
-		<legend>Torneo</legend>
-
 		<fieldset>
-			<label>Nombre del equipo: </label>
-			<input type="text" name="nom_equi" placeholder="<?=$nom?>" required>
 
-			<br>
-			<label>Nombre corto: </label>
-			<input type="text" name="nom_cort"  placeholder="<?=$row['nom_cort']?>" required>
+			<table>
+				
+				<tr>
+					<td><label>Nombre del equipo: </label></td>
+					<td><input type="text" name="nom_equi" value="<?=$nom?>" required></td>
+				</tr>
 
-			<br>
-			<label>Fecha de creacion</label>
-			<input type="date" name="fecha"  placeholder="<?=$row['fecha']?>" required>
+				<tr>
+					<td><label>Nombre corto: </label></td>
+					<td><input type="text" name="nom_corto"  value="<?=$row['nom_corto']?>" required></td>
+				</tr>
 
-			<br>
-			<label>Direccion del responsable: </label>
-			<input type="text" name="direccion"  placeholder="<?=$row['direccion']?>">
+				<tr>
+					<td><label>Fecha de creacion</label></td>
+					<td><input type="date" name="fecha"  value="<?=$row['fecha']?>" required></td>
+				</tr>
 
-			<br>
-			<label>Correo: </label>
-			<input type="text" name="correo"  placeholder="<?=$row['correo']?>" required>
+				<tr>
+					<td><label>Direccion del responsable: </label></td>
+					<td><input type="text" name="direccion"  value="<?=$row['direccion']?>"></td>
+				</tr>
 
-			<br>
-			<label>Sitio web: </label>
-			<input type="text" name="web"  placeholder="<?=$row['web']?>">
+				<tr>
+					<td><label>Correo: </label></td>
+					<td><input type="text" name="correo"  value="<?=$row['correo']?>" required></td>
+				</tr>
+
+				<tr>
+					<td><label>Sitio web: </label></td>
+					<td><input type="text" name="web"  value="<?=$row['web']?>"></td>
+				</tr>
+
+				<tr colspan="2">
+					<td><input type="submit" name="boton2" value="registrar"></td>
+				</tr>
+
+			</table>			
 			
 			<input type="hidden" name="id" value="<?= $row['id']?>">
-			<br>
-			<input type="submit" name="boton2" value="registrar">
+
 		</fieldset>
 
 	</form>

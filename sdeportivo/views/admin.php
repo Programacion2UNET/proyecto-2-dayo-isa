@@ -81,8 +81,23 @@
                     <tr>
                     	<td colspan="2"> <?php echo $row["nom_torneo"] ?> </td> <!--td: columnas, nom torneo-->
                     	<td colspan="2">
-                    		<a href="detallesTorneo.php?nom_torneo='<?=$row["nom_torneo"]?>'"><button class="info">Detalles</button></a> 
-                    		<a href="editarTorneo.php?nom_torneo='<?=$row["nom_torneo"]?>'"><button class="info">Editar</button></a> 
+
+                    		<form method="post" action="detallesTorneo.php"> 
+
+		      					<input class="info" type="hidden" name="nom_torneo" value="<?=$row["nom_torneo"]?>">
+
+		      					<input class="info" type="submit" name="" value="Detalles">
+
+		      				</form>
+
+		      				<form method="post" action="editarTorneo.php"> 
+
+		      					<input class="info" type="hidden" name="nom_torneo" value="<?=$row["nom_torneo"]?>">
+
+		      					<input class="info" type="submit" name="" value="Editar">
+
+		      				</form>
+
                     		<a href="../controllers/eliminarTorneo.php?id='<?=$row["id"]?>'"><button class="rojo">Eliminar</button></a>
                     	</td>
                     </tr>
@@ -108,8 +123,23 @@
 		      			<td><?php echo $row2["categoria"]?></td>
 		      			<td><?php echo $row2["participantes"]?></td>
 		      			<td>
-		      				<a href="detallesEquipo.php?nom_equi='<?=$row3["nom_equi"]?>'"><button class="info">Detalles</button></a> 
-                    		<a href="editarEquipo.php?nom_equi='<?=$row3["nom_equi"]?>'"><button class="info">Editar</button></a> 
+		      				<form method="post" action="detallesEquipo.php"> 
+
+		      					<input class="info" type="hidden" name="nom_equi" value="<?=$row3["nom_equi"]?>">
+
+		      					<input class="info" type="submit" name="" value="Detalles">
+
+		      				</form>
+
+		      				<form method="post" action="editarEquipo.php"> 
+
+		      					<input class="info" type="hidden" name="nom_equi" value="<?=$row3["nom_equi"]?>">
+
+		      					<input class="info" type="submit" name="" value="Editar">
+
+		      				</form>
+		      				
+                    		
                     		<a href="../controllers/eliminarEquipo.php?id='<?=$row3["id"]?>'"><button class="rojo">Eliminar</button></a>
                     	</td>
 		      		</tr>

@@ -16,9 +16,9 @@
 
 		mysqli_select_db($connection, 'sdeportivo');
 
-		$nombre = mysqli_real_escape_string($connection, $_POST['nom_torneo']);
-		$fech = mysqli_real_escape_string($connection, $_POST['fecha']);
-		$id = mysqli_real_escape_string($connection, $_POST['id']);
+		$nombre = $_POST['nom_torneo'];
+		$fech = $_POST['fecha'];
+		$id = $_POST['id'];
 		
 		$q = "UPDATE `administrador` SET `nom_torneo`='$nombre', `fecha`='$fech' WHERE `id`='$id'";
 

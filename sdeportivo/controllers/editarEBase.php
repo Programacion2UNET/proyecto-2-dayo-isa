@@ -16,13 +16,13 @@
 
 		mysqli_select_db($connection, 'sdeportivo');
 
-		$nombre = mysqli_real_escape_string($connection, $_POST['nom_equi']);
-		$corto = mysqli_real_escape_string($connection, $_POST['nom_cort']);
-		$fecha = mysqli_real_escape_string($connection, $_POST['fecha']);
-		$dire = mysqli_real_escape_string($connection, $_POST['direccion']);
-		$correo = mysqli_real_escape_string($connection, $_POST['correo']);
-		$web = mysqli_real_escape_string($connection, $_POST['web']);
-		$id = mysqli_real_escape_string($connection, $_POST['id']);
+		$nombre = $_POST['nom_equi'];
+		$corto =$_POST['nom_cort'];
+		$fecha = $_POST['fecha'];
+		$dire = $_POST['direccion'];
+		$correo = $_POST['correo'];
+		$web = $_POST['web'];
+		$id = $_POST['id'];
 
 		$q = "UPDATE `equipos` SET `nom_equi`='$nombre', `nom_corto`='$corto',`fecha`='$fecha',`direccion`='$dire', `correo`='$correo',`web`='$web' WHERE `id`='$id'";
 

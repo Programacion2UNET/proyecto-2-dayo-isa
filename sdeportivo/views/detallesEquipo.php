@@ -24,12 +24,12 @@
 	<title>Detalles Equipo</title>
 </head>
 <body>
-	<h2>Detalles del equipo: <?php echo $_GET["nom_equi"]; ?></h2>
+	<h2>Detalles del equipo: <?php echo $_POST["nom_equi"]; ?></h2>
 	<a href="admin.php"><button class="verde">Regresar</button></a>
 	<a href="../controllers/cerrar.php"><button class="rojo">Cerrar Sesion</button></a>
 	<?php
-		$nom = $_GET["nom_equi"];
-		$sql = "SELECT * FROM `equipos` WHERE nom_equi = $nom"; //Me traigo la tabla admi
+		$nom = mysqli_real_escape_string($connection, $_POST["nom_equi"]);
+		$sql = "SELECT * FROM `equipos` WHERE nom_equi = '$nom'"; //Me traigo la tabla admi
 
 		if($result = mysqli_query($connection, $sql)){	
 
@@ -45,7 +45,7 @@
 						<th > Web </th>
                     </tr> 
                     <tr>
-                    	<td > <?php echo $nom ?> </td> 
+                    	<td > <?php echo $_POST["nom_equi"] ?> </td> 
  						<td > <?php echo $row["nom_corto"] ?> </td> 
  						<td > <?php echo $row["fecha"] ?> </td> 
  						<td > <?php echo $row["direccion"] ?> </td> 

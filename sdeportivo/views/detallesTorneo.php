@@ -24,12 +24,12 @@
 	<title>Detalles Torneo</title>
 </head>
 <body>
-	<h2>Detalles del torneo: <?php echo $_GET["nom_torneo"]; ?></h2>
+	<h2>Detalles del torneo: <?php echo $_POST["nom_torneo"]; ?></h2>
 	<a href="admin.php"><button class="verde">Regresar</button></a>
 	<a href="../controllers/cerrar.php"><button class="rojo">Cerrar Sesion</button></a>
 	<?php
-		$nom = $_GET["nom_torneo"];
-		$sql = "SELECT * FROM `administrador` WHERE nom_torneo = $nom"; //Me traigo la tabla admi
+		$nom = mysqli_real_escape_string($connection, $_POST["nom_torneo"]);
+		$sql = "SELECT * FROM `administrador` WHERE nom_torneo = '$nom'"; //Me traigo la tabla admi
 
 		if($result = mysqli_query($connection, $sql)){	
 
@@ -41,7 +41,7 @@
                     	<th > Fecha de Realizacion </th>
                     </tr> 
                     <tr>
-                    	<td > <?php echo $nom ?> </td> 
+                    	<td > <?php echo $_POST["nom_torneo"] ?> </td> 
  						<td > <?php echo $row["fecha"] ?> </td> 
                     </tr>
         </table>            
