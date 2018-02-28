@@ -32,5 +32,9 @@
 		</fieldset>
 
 	</form>
+	
+	<a href="admin.php"><button class="verde">Regresar</button></a>
+	<a href="../controllers/cerrar.php"><button >Cerrar Sesion</button></a>
+
 </body>
 </html>
