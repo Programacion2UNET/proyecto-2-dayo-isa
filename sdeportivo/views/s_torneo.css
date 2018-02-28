@@ -29,12 +29,27 @@ th{
 	background-color: #18CDCA;
 	
 }
+
+table{
+	text-align:center;
+	margin:0 auto;
+	border-collapse: collapse;
+	border: 2px solid black;
+	border-collapse: collapse;
+	border: 2px solid black;
+	font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
 #registrar{
 	background-color: #4F80E1;
 	border-radius: 4px;
 }
-table{
-	border-collapse: collapse;
-	border: 2px solid black;
-	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+
+button{
+	position: relative;
+	left: 350px;
+	font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	cursor: pointer;
+	font-weight: bold;
 }
+

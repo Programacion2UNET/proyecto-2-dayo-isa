@@ -1,6 +1,7 @@
 legend{
 	color:#18CDCA;
-
+	font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-weight: bold;
 }
 body{
 	background-color:#292C44;
@@ -19,4 +20,24 @@ fieldset{
 button{
 	position: relative;
 	left: 350px;
+	font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+label{
+	font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+input{
+	
+	font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	cursor: pointer;
+}
+
+table{
+	text-align:center;
+	margin:0 auto;
+	font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	
 }

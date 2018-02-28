@@ -10,11 +10,11 @@
 	<title>Inicio</title>
 </head>
 <body>
+
+
 	<h1>BIENVENIDO</h1>
 	<div id="inicio">
 	<form action="controllers/iniciar.php" method="post">
-
-		
 
 		<fieldset>
 			<legend>Iniciar sesion</legend>
@@ -44,8 +44,6 @@
 	<div id="registro">
 
 	<form action="controllers/iniciar.php" method="post">
-
-		
 
 		<fieldset>
 			<legend>Registrarse</legend>

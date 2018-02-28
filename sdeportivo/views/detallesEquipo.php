@@ -24,7 +24,7 @@
 	<link rel="stylesheet" type="text/css" href="s_torneo.css">
 	<title>Detalles Equipo</title>
 </head>
-<body>
+<body background="../img/fondo2.png">
 	<h2>Detalles del equipo: <?php echo $_POST["nom_equi"]; ?></h2>
 	<?php
 		$nom = mysqli_real_escape_string($connection, $_POST["nom_equi"]);

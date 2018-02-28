@@ -1,20 +1,33 @@
 h2{
+	text-align:center;
+	margin:0 auto;
 	color: #FF5349;
 }
 body{
 	background-color: #292C44;
 	color:white;
+	text-align:center;
+	margin:0 auto;
 }
 th{
 	background-color: #18CDCA;
 	color: white;
 }
 table{
+	font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	text-align:center;
+	margin:0 auto;
 	border-collapse: collapse;
 	border: 2px solid black;
+	
 }
 td, th{
 	text-align: center;
 	vertical-align: middle;
 	border: 1px solid black;
 }	
+
+button{
+	font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	font-weight: bold;
+}

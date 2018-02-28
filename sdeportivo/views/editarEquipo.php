@@ -24,7 +24,7 @@
 	<link rel="stylesheet" type="text/css" href="s_etorneo.css">
 	<title>Editar Equipo</title>
 </head>
-<body>
+<body background="../img/fondo2.png">
 	<h2>Editando el equipo: <?php echo $_POST["nom_equi"]; ?></h2>
 	<?php
 		$nom = mysqli_real_escape_string($connection, $_POST["nom_equi"]);

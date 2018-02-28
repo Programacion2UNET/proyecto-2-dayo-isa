@@ -27,7 +27,7 @@
 	<link rel="stylesheet" type="text/css" href="s_admin.css">
 	<title>Edicion para administradores</title>
 </head>
-<body>
+<body background="../img/fondo2.png">
 	
 
 	<h2>Bienvenida administradora <?php echo $_SESSION["usuario"]; ?></h2>
