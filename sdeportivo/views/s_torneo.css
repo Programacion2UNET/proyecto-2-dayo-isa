@@ -15,10 +15,17 @@ legend{
 	font-weight: bold;
 	color: #18CDCA;
 }
+
+
 body{
+	text-align:center;
+	margin:0 auto;
 	background-color:#292C44;
-	color:#4F80E1;
+	color:#FFF;
 }
+
+
+
 td{
 	color: white;
 	border: 1px solid black;
@@ -53,3 +60,15 @@ button{
 	font-weight: bold;
 }
 
+input[name=participar]{
+	position: relative;
+	left: 350px;
+	font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+button[name=cerrar]{
+	text-align:center;
+	margin:0 auto;
+}

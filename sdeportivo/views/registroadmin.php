@@ -12,10 +12,10 @@
 	<link rel="stylesheet" type="text/css" href="s_etorneo.css">
 	<title>Registrando torneo</title>
 </head>
-<body>
+<body background="../img/fondo2.png">
 	<form action="../controllers/baseadmin.php" method="post">
 
-		
+		<h2>Registro de torneos</h2>
 
 		<fieldset>
 			<legend>Registro de Torneo</legend>

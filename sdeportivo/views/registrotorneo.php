@@ -28,7 +28,7 @@
  	<link rel="stylesheet" type="text/css" href="s_torneo.css">
  	<title>Torneo Registrado</title>
  </head>
- <body>
+ <body background="../img/fondo2.png">
 
  	<?php 
  			$usu=$_SESSION["usuario"];
@@ -50,8 +50,8 @@
 
 			?>
 
-	<a href="torneos.php"><button>Regresar</button></a>
- 	<a href="../controllers/cerrar.php"><button>Cerrar Session</button></a>
+	<a href="torneos.php"><button id="regresar">Regresar</button></a>
+ 	<a href="../controllers/cerrar.php"><button id="regresar">Cerrar Session</button></a>
  
  </body>
  </html>

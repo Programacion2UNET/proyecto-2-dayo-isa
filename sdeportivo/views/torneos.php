@@ -30,17 +30,17 @@
 	<link rel="stylesheet" type="text/css" href="s_torneo.css">
 	<title>Inscripcion de torneo</title>
 </head>
-<body>
+<body background="../img/fondo2.png">
 
 	<form method="post" action="../controllers/regisTorneo.php">
 
 		<h2>Registrarse en un torneo</h2>
 
-		<br>
-
-		<label>Torneo a inscribirse: </label>	
-
-		<select name="nom_torneo">
+		<table>
+		<tr>
+		<td><label>Torneo a inscribirse: </label></td>
+		
+		<td><select name="nom_torneo">
 
 			<option checked>Seleccione un torneo</option>
 
@@ -67,32 +67,33 @@
 
 			 ?>
 
-		</select>
+		</select></td></tr>
 
-		<br><br>
+		
 
-		<label>Cantidad de paticipantes: </label>
-		<input type="number" name="participantes">
+		<tr>
+		<td><label>Cantidad de paticipantes: </label></td>
+		<td><input type="number" name="participantes"></td>
+		</tr>
 
-		<br><br>
+		
+		<tr>
+		<td><label>Categoria: </label></td>	
 
-		<label>Categoria: </label>	
-
-		<select name="categoria">
+		<td><select name="categoria">
 			
 			<option>Principiantes</option>
 			<option>Aficionados</option>
 			<option>Profesionales</option>
 
 		</select>
-
-			<br><br>
-
-		<input type="submit" name="participar" value="Participar">
-
+		</tr></td></table>
+	
+	
+	<input type="submit" name="participar" value="Participar">
 	</form>
 
-	<a href="../controllers/cerrar.php"><button>Cerrar Session</button></a>
+	<a  href="../controllers/cerrar.php"><button name="cerrar">Cerrar Session</button></a>
 
 </body>
 </html>
