@@ -25,6 +25,7 @@
  <!DOCTYPE html>
  <html>
  <head>
+ 	<link rel="stylesheet" type="text/css" href="s_torneo.css">
  	<title>Torneo Registrado</title>
  </head>
  <body>

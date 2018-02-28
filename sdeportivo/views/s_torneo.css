@@ -1,0 +1,40 @@
+.rojo{
+	background-color: #FF5349;
+	border-radius: 4px;
+}
+.verde{
+	background-color: #4CAF50;
+	border-radius: 4px;
+}
+h2{
+	text-align: center;
+	color: #FF5349;
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+}
+legend{
+	font-weight: bold;
+	color: #18CDCA;
+}
+body{
+	background-color:#292C44;
+	color:#4F80E1;
+}
+td{
+	color: white;
+	border: 1px solid black;
+} 
+th{
+	color: white;
+	border: 1px solid black;
+	background-color: #18CDCA;
+	
+}
+#registrar{
+	background-color: #4F80E1;
+	border-radius: 4px;
+}
+table{
+	border-collapse: collapse;
+	border: 2px solid black;
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+}

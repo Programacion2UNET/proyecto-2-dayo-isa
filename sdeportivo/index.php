@@ -6,17 +6,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<title>Inicio</title>
 </head>
 <body>
-
+	<h1>BIENVENIDO</h1>
 	<div id="inicio">
 	<form action="controllers/iniciar.php" method="post">
 
-		<legend>Iniciar sesion</legend>
+		
 
 		<fieldset>
-
+			<legend>Iniciar sesion</legend>
 			<table>
 				
 				<tr>
@@ -30,7 +31,7 @@
 				</tr>
 
 				<tr colspan="2">
-					<td><input type="submit" name="boton1" value="aceptar"></td>
+					<td><input type="submit" name="boton1" value="Aceptar"></td>
 				</tr>
 
 			</table>
@@ -40,14 +41,14 @@
 	</form>
 	</div>
 
-	<div id="registo">
+	<div id="registro">
 
 	<form action="controllers/iniciar.php" method="post">
 
-		<legend>Registrarse</legend>
+		
 
 		<fieldset>
-
+			<legend>Registrarse</legend>
 			<table>
 				
 				<tr>
@@ -91,7 +92,7 @@
 				</tr>
 
 				<tr colspan="2">
-					<td><input type="submit" name="boton2" value="registrar"></td>
+					<td><input type="submit" name="boton2" value="Registrar"></td>
 				</tr>
 
 			</table>

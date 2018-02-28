@@ -1,0 +1,46 @@
+
+#de{
+	position: relative;
+	width: 0px;
+	top: 30px;
+	left: 50px;
+}
+#ee{
+	position: relative;
+	top: -5px;
+	left: 135px;
+	width: 0px;
+}
+#et{
+	position: relative;
+	top: -40px;
+	left: 90px;
+}
+h2{
+	text-align: center;
+	color: #FF5349;
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+	font-size: 40px;
+}
+body{
+	background-color:#292C44;
+	color:#F0F0F1;
+}
+table{
+	border-collapse: collapse;
+	border: 2px solid black;
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+}
+td, th{
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid black;
+}	
+th{
+	font-size: 20px;
+	background-color: #18CDCA;
+}
+button{
+	width: 150px;
+	height: 30px;
+}

@@ -21,12 +21,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="s_etorneo.css">
 	<title>Editar Equipo</title>
 </head>
 <body>
 	<h2>Editando el equipo: <?php echo $_POST["nom_equi"]; ?></h2>
-	<a href="admin.php"><button class="verde">Regresar</button></a>
-	<a href="../controllers/cerrar.php"><button class="rojo">Cerrar Sesion</button></a>
 	<?php
 		$nom = mysqli_real_escape_string($connection, $_POST["nom_equi"]);
 		$sql = "SELECT * FROM `equipos` WHERE nom_equi = '$nom'"; //Me traigo la tabla admi
@@ -73,7 +72,8 @@
 				</tr>
 
 				<tr colspan="2">
-					<td><input type="submit" name="boton2" value="registrar"></td>
+
+					<td><br><input type="submit" name="boton2" value="Registrar"></td>
 				</tr>
 
 			</table>			
@@ -89,6 +89,9 @@
 		}
 
 	?>
+	<br>
+	<a href="admin.php"><button >Regresar</button></a>
+	<a href="../controllers/cerrar.php"><button >Cerrar Sesion</button></a>
 </body>
 </html>
 

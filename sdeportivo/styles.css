@@ -1,0 +1,47 @@
+h1{
+	
+	text-align: center;
+	color: #FF5349;
+	background-color:#292C44;
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+
+}
+
+#inicio{
+	 position: relative;
+	  width  : 400px;
+	  left: 50px;
+ 	 margin : 0 ;
+}
+#registro{
+	position: relative;
+  	width  : 470px;
+ 	 left: 470px;
+ 	 top: -130px;
+ 	 margin : 0 ;
+}
+input{
+	display: table-caption;
+}
+body{
+	background-image: url("img/fondo.png");
+	
+	
+}
+form{
+	background-color:#292C44;
+}
+legend{
+	color: #18CDCA;
+	font-weight: bold;
+
+}
+label{
+	color: #4F80E1;
+}
+input[type=submit]{
+	padding: 3px 10px;
+	cursor: pointer;
+	font-weight: bold;
+	font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}

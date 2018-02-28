@@ -24,44 +24,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="s_admin.css">
 	<title>Edicion para administradores</title>
 </head>
 <body>
-	<style type="text/css">
-		.info{
-			background-color: #008CBA;
-			border-radius: 4px;
-		}
-		.rojo{
-			background-color: #f44336;
-			border-radius: 4px;
-		}
-		.verde{
-			background-color: #4CAF50;
-		}
-		table{
-			border-collapse: collapse;
-			border: 2px solid black;
-		}
-		td, th{
-			text-align: center;
-			vertical-align: middle;
-			border: 1px solid black;
-		}	
-		th{
-			font-size: 20px;
-			background-color: lightblue;
-		}
-		button{
-			width: 150px;
-			height: 30px;
-		}
-		
-	</style>
+	
 
 	<h2>Bienvenida administradora <?php echo $_SESSION["usuario"]; ?></h2>
-	<a href="../views/registroadmin.php"><button class="verde">Registrar Torneo</button></a>
-	<a href="../controllers/cerrar.php"><button class="rojo">Cerrar Sesion</button></a>
+	<a href="../views/registroadmin.php"><button >Registrar Torneo</button></a>
+	<a href="../controllers/cerrar.php"><button >Cerrar Sesion</button></a>
 
 	<?php
 
@@ -82,28 +53,28 @@
                     	<td colspan="2"> <?php echo $row["nom_torneo"] ?> </td> <!--td: columnas, nom torneo-->
                     	<td colspan="2">
 
-                    		<form method="post" action="detallesTorneo.php"> 
+                    		<form method="post" action="detallesTorneo.php" id="de"> 
 
 		      					<input class="info" type="hidden" name="nom_torneo" value="<?=$row["nom_torneo"]?>">
 
-		      					<input class="info" type="image" src="../img/detallesc.png" width="30" height="30" name="" value="Detalles">
+		      					<input class="info" type="image" src="../img/detalless.png" onmouseover="this.src='../img/detallesc.png';" onmouseout="this.src='../img/detalless.png'" width="30" height="30" name="" value="Detalles">
 
 		      				</form>
 
-		      				<form method="post" action="editarTorneo.php"> 
+		      				<form method="post" action="editarTorneo.php" id="ee"> 
 
 		      					<input class="info" type="hidden" name="nom_torneo" value="<?=$row["nom_torneo"]?>">
 
-		      					<input class="info" type="image" src="../img/editarc.png" width="30" height="30" name="" value="Editar">
+		      					<input class="info" type="image" src="../img/editars.png" onmouseover="this.src='../img/editarc.png';" onmouseout="this.src='../img/editars.png'" width="30" height="30" name="" value="Editar">
 
 		      				</form>
 
-                    		<a href="../controllers/eliminarTorneo.php?id='<?=$row["id"]?>'"><input type="image" src="../img/eliminarc.png" width="30" height="30" class="rojo"></a>
+                    		<a href="../controllers/eliminarTorneo.php?id='<?=$row["id"]?>'"><input type="image" id="et" src="../img/eliminars.png" onmouseover="this.src='../img/eliminarc.png';" onmouseout="this.src='../img/eliminars.png'" width="30" height="30" class="rojo"></a>
                     	</td>
                     </tr>
 
                     <tr>
-                    	<th> Nombre del Equipo </th>
+                    	<th > Nombre del Equipo </th>
 		        		<th> Categoria </th> 
 		      	 		<th> Cantidad de participantes </th>
 		      	 		<th> Opciones </th>
@@ -119,28 +90,28 @@
 		      						while($row3 = mysqli_fetch_assoc($result3)){
 		      		?>	
 		      		<tr>
-		      			<td><?php echo $row3["nom_equi"]?></td>
-		      			<td><?php echo $row2["categoria"]?></td>
-		      			<td><?php echo $row2["participantes"]?></td>
-		      			<td>
-		      				<form method="post" action="detallesEquipo.php"> 
+		      			<td ><?php echo $row3["nom_equi"]?></td>
+		      			<td ><?php echo $row2["categoria"]?></td>
+		      			<td ><?php echo $row2["participantes"]?></td>
+		      			<td >
+		      				<form method="post" action="detallesEquipo.php" > 
 
 		      					<input class="info" type="hidden" name="nom_equi" value="<?=$row3["nom_equi"]?>">
 
-		      					<input class="info" type="image" src="../img/detallesc.png" width="30" height="30" name="" value="Detalles">
+		      					<input class="info" type="image" src="../img/detalless.png" onmouseover="this.src='../img/detallesc.png';" onmouseout="this.src='../img/detalless.png'" width="30" height="30" name="" value="Detalles">
 
 		      				</form>
 
-		      				<form method="post" action="editarEquipo.php"> 
+		      				<form method="post" action="editarEquipo.php" > 
 
 		      					<input class="info" type="hidden" name="nom_equi" value="<?=$row3["nom_equi"]?>">
 
-		      					<input class="info" type="image" src="../img/editarc.png" width="30" height="30" name="" value="Editar">
+		      					<input class="info" type="image" src="../img/editars.png" onmouseover="this.src='../img/editarc.png';" onmouseout="this.src='../img/editars.png'" width="30" height="30" name="" value="Editar">
 
 		      				</form>
 		      				
                     		
-                    		<a href="../controllers/eliminarEquipo.php?id='<?=$row3["id"]?>'"><input type="image" src="../img/eliminarc.png" width="30" height="30" class="rojo"></a>
+                    		<a href="../controllers/eliminarEquipo.php?id='<?=$row3["id"]?>'"><input type="image"  src="../img/eliminars.png" onmouseover="this.src='../img/eliminarc.png';" onmouseout="this.src='../img/eliminars.png'" width="30" height="30" class="rojo"></a>
                     	</td>
 		      		</tr>
 		      		<?php

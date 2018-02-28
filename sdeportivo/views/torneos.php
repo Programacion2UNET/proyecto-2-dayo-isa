@@ -27,13 +27,14 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="s_torneo.css">
 	<title>Inscripcion de torneo</title>
 </head>
 <body>
 
 	<form method="post" action="../controllers/regisTorneo.php">
 
-		<legend>Registrarse en un torneo</legend>
+		<h2>Registrarse en un torneo</h2>
 
 		<br>
 

@@ -9,24 +9,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="s_etorneo.css">
 	<title>Registrando torneo</title>
 </head>
 <body>
 	<form action="../controllers/baseadmin.php" method="post">
 
-		<legend>Torneo</legend>
+		
 
 		<fieldset>
-			<br>
+			<legend>Registro de Torneo</legend>
+			
 			<label>Nombre del Torneo: </label>
 			<input type="text" name="nom_torneo" required>
 
 			<br>
-			<label>Fecha de realizacion</label>
+			<label>Fecha de realizacion:</label>
 			<input type="date" name="fecha" required>
 
-			<br>
-			<input type="submit" name="reg-torneo" value="registrar">
+			<br><br>
+			<input type="submit" name="reg-torneo" value="Registrar">
 		</fieldset>
 
 	</form>
